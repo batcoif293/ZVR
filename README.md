@@ -68,10 +68,10 @@ The `--user` flag installs it to your own profile folder — no admin needed.
 4. Run `opentrack.exe` from the extracted folder
 
 **In OpenTrack:**
-- Input  → `UDP over network` → click the ⚙ icon → Port: `4242`
-- Output → `freetrack 2.0 Enhanced` → click ⚙ icon → set to `Both`
-- Filter → `Accela` (smooths out jitter)
-- Click **Start** (the green play button)
+- Input  → `UDP over network` → click the hammer icon → Port: `4242` (this is is not on by default)
+- Output → `freetrack 2.0 Enhanced` → click the hammer icon → set to `Both` (this is on by default, but check anyways)
+- Filter → `Accela` (smooths out jitter) (this is on by default, but check anyways)
+- Click **Start** (the gray buttton next to stop, in the bottom right corner of the screen. they are under "tracking")
 
 ---
 
