@@ -25,6 +25,37 @@ Open Command Prompt on the laptop and run:
 pip install websockets --user
 ```
 
+if this dosent work, try adding:
+
+Option 1 — use py instead of pip:
+py -m pip install websockets --user
+
+Option 2 — use the full Python launcher:
+python -m pip install websockets --user
+
+Option 3 — use python3:
+python3 -m pip install websockets --user
+
+Try each one until one works. if you get an error like:
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+THEN:
+goto microsoft store and download python 1.12 (1.12 specificly)
+
+this was my result:
+```
+C:\Users\28ijw>python -m pip install websockets --user
+Collecting websockets
+  Downloading websockets-16.0-cp312-cp312-win_amd64.whl.metadata (7.0 kB)
+Downloading websockets-16.0-cp312-cp312-win_amd64.whl (178 kB)
+Installing collected packages: websockets
+  WARNING: The script websockets.exe is installed in 'C:\Users\28ijw\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed websockets-16.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.1.2
+[notice] To update, run: C:\Users\28ijw\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+```
+
 The `--user` flag installs it to your own profile folder — no admin needed.
 
 ---
